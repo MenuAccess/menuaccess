@@ -23,7 +23,7 @@ class Settings(BaseSettings):
         env="OPENAI_API_KEY",
     )
     GPT_INDEX_QUERY: str = """As a professor generate 5 Questions and Answer in the following format: [{"question": "{Question}", "answer": "{Answer}"}] don't include the number of questions in the query."""
-    MENU_QUERY: str = """As a dietician identify menu items that can meet the following dietary restrictions: """
+    MENU_QUERY: str = """As a dietician identify the following menu items that can meet the following dietary restrictions: in the following: """
 
     SUPABASE_URL: str = Field(
         default="https://vfxgbbsngynctbktxjjt.supabase.co", env="SUPABASE_URL"
