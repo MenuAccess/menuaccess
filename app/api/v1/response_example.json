@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is the main goal of the exercises?",
+        "answer": "The main goal of the exercises is to help students review key content after the lecture and motivate them to think about the content and its applications."
+    },
+    {
+        "question": "How many exercises will be given throughout the semester?",
+        "answer": "There will be 12 exercises given throughout the semester."
+    },
+    {
+        "question": "What is the penalty for submitting less than 75% of the exercises?",
+        "answer": "Students who submit less than 75% of the exercises will have a penalty of 10% in the final exam grade."
+    },
+    {
+        "question": "Will individual feedback be provided for the exercises?",
+        "answer": "Individual feedback will not be provided for the exercises, unless requested."
+    },
+    {
+        "question": "What is the bonus for submitting all proposed exercises and attending all exercise classes?",
+        "answer": "Students who submit all proposed exercises and attend all exercise classes will receive a bonus of 10% in the final exam grade."
+    }
+]
