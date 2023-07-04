@@ -219,7 +219,7 @@ class LlamaIndex:
         return [ParsedOutput(**r) for r in result]
 
     async def query_index(
-        self, file_name: str, restrictions: str
+        self, user_id: str, file_name: str, restrictions: str
     ):
         """Query the index"""
 
@@ -229,6 +229,7 @@ class LlamaIndex:
             embedding_model.last_token_usage = 0
             self.results = (
                 get_and_query(
+                    user_id=user_id,
                     index_storage=self.index_storage,
                     query=self.query + restrictions,
                     response_mode=self.response_mode,
@@ -252,7 +253,9 @@ class LlamaIndex:
         # format the data into an Array of FormattedOutput
 
         # Insert the data into the database
-        logger.info("Uploading Data to Supabase")
-        supabase_client.insert_data("output", data=output)
+        # logger.info("Uploading Data to Supabase")
+        # supabase_client.insert_data("output", data=output)
+
+        print(self.results)
 
         return self.results

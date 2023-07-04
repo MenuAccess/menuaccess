@@ -90,6 +90,7 @@ refine_prompt = RefinePrompt(fmt_refine_tmpl, output_parser=output_parser)
 
 
 def get_and_query(
+    user_id,
     index_storage,
     query,
     response_mode,
